@@ -1,3 +1,6 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .center  {
     /* background-color: aqua; */
     /* color: white; */
@@ -10,6 +13,11 @@
     /* border: 3px solid green; */
 }
 
+
+header {
+    background-color: black;
+}
+
 button {
     color : white;
     margin-top: 15px;
@@ -18,8 +26,8 @@ button {
 
 ul {
     list-style: none;          /* This property is used to remove the styling/bullets from the list items*/
-    text-decoration: none;
     margin-bottom: 100px;
+    padding: 20px;
 }
 
 li {
@@ -27,6 +35,10 @@ li {
     margin: 100px;
 }
 
+li a {
+    color:#fff;
+    text-decoration: none;
+}
 
 .featuredImages {
     
