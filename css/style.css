@@ -16,6 +16,18 @@ button {
     
 }
 
+ul {
+    list-style: none;          /* This property is used to remove the styling/bullets from the list items*/
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+li {
+    display: inline;
+    margin: 100px;
+}
+
+
 .featuredImages {
     
 }
