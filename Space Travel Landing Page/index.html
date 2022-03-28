@@ -21,17 +21,58 @@
     
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">    <!--to make the color of navbar blue you just have to change bg-dark to bg-primary-->
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+          
+          <img src="images/logo2.png" alt=".." class="img-fluid img-responsive" width="4%">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">BPK's Space Travel</a>
+            </li>
+            <li class="nav-item">       <!-- if you write active inside the class beside of nav-link the your navbar item(i.e Home here) will be lightned up-->
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown08">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">    to make the color of navbar blue you just have to change bg-dark to bg-primary -->
+        <!-- <div class="container-fluid">
           <a class="navbar-brand" href="#">BPK's Space Travel</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>    <!--if you write active inside the class beside of nav-link the your navbar item(i.e Home here) will be lightned up-->
-              </li>
+              <<li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>    if you write active inside the class beside of nav-link the your navbar item(i.e Home here) will be lightned up-->
+              <!-- </li>
               <li class="nav-item">
                 <a class="nav-link"href="#">About</a>
               </li>
@@ -40,7 +81,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
-              </li>
+              </li> -->
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
@@ -55,14 +96,14 @@
               <!-- <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li> -->
-            </ul>
+            <!-- </ul> -->
             <!-- <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form> -->
-          </div>
-        </div>
-      </nav>
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </nav> -->
 
     <!-- CARAOUSEL -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -70,18 +111,18 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/carousel1.jpg" alt="SpaceImage" class="d-block w-100" class="img-fluid img-responsive" style="height: 600px;">    <!--class d-block w-100 is important rest this class img-fluid img-responsive is of no use here but it is mainly used while we are using the grid model, as this won't let your image go out of the column sum mentioned i.e whatever your value is, by using this class img-fluid img-responsive it'll fit the image properly in that boundary/grid-->-->
+          <img src="images/carousel1.jpg" alt="SpaceImage" class="d-block w-100" class="img-fluid img-responsive" style="height: 600px;">    <!--class d-block w-100 is important rest this class img-fluid img-responsive is of no use here but it is mainly used while we are using the grid model, as this won't let your image go out of the column sum mentioned i.e whatever your value is, by using this class img-fluid img-responsive it'll fit the image properly in that boundary/grid-->
         </div>
         <div class="carousel-item">
           <img src="images/carousel2.jpg" alt="SpaceImage" class="d-block w-100" style="height: 600px;">
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img src="images/carousel3.jpg" alt="SpaceImage" class="d-block w-100" style="height: 600px;">
-        </div>
+        </div> -->
         <div class="carousel-item">
           <img src="images/carousel4.jpg" alt="SpaceImage" class="d-block w-100" style="height: 600px;">
         </div>
@@ -102,60 +143,62 @@
       <hr>
       <!-- Now below we will use grid model which says in one row you can have a sum of 12 columns which you need to mention in the class col-sm-value(number), it can either be a combination of 4*4*4 or 6*6 or 3*3*3*3 or anything bus total 12 sum hi ho sakte hai ak row me according to the grid model -->
       <div class="row">
-        <div class="col-sm-4">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
-          Officia culpa maxime officiis repellat magnam, molestias id dolor non cumque obcaecati ipsum eius voluptas libero laborum in saepe earum, dignissimos quo rem alias cupiditate odit facere illo? Rerum, veritatis.
+        <div class="col-sm-4 servicesColumn">
+          <img src="images/services.png" alt=".." class="img-fluid img-responsive" width="30%">
+          <p class="servicesContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
           </p>
         </div>
-        <div class="col-sm-4">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
-          Officia culpa maxime officiis repellat magnam, molestias id dolor non cumque obcaecati ipsum eius voluptas libero laborum in saepe earum, dignissimos quo rem alias cupiditate odit facere illo? Rerum, veritatis.
+        <div class="col-sm-4 servicesColumn">
+          <img src="images/services.png" alt=".." class="img-fluid img-responsive" width="30%">
+          <p class="servicesContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
           </p>
         </div>
-        <div class="col-sm-4">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
-          Officia culpa maxime officiis repellat magnam, molestias id dolor non cumque obcaecati ipsum eius voluptas libero laborum in saepe earum, dignissimos quo rem alias cupiditate odit facere illo? Rerum, veritatis.
+        <div class="col-sm-4 servicesColumn">
+          <img src="images/services.png" alt=".." class="img-fluid img-responsive" width="30%">
+          <p class="servicesContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
           </p>
         </div>
       </div>
       <!-- Another row below isme sum directly 12 derha hu so it'll cover the whole row-->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-sm-12">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
           Officia culpa maxime officiis repellat magnam, molestias id dolor non cumque obcaecati ipsum eius voluptas libero laborum in saepe earum, dignissimos quo rem alias cupiditate odit facere illo? Rerum, veritatis.
           </p>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- GALLERY & BUY NOW -->
     <section id="gallery" class="container">
       <!-- Another row below isme sum 6*6 derha hu so it'll make 2 columns which sums 12 in a row-->
       <div class="row">
-        <div class="col-sm-6">
-          <img src="images/gallery1.jpg" alt=".." class="img-fluid img-responsive">    <!--so this class img-fluid img-responsive is mainly used while we are using the grid model, as this won't let your image go out of the column sum mentioned i.e 6 here so by using this class it'll fit the image properly in that boundary-->
+        <div class="col-sm-6 galleryColumn">
+          <img src="images/gallery1.jpg" alt=".." class="img-fluid img-responsive" width="70%" style="border-radius: 80%;">    <!--so this class img-fluid img-responsive is mainly used while we are using the grid model, as this won't let your image go out of the column sum mentioned i.e 6 here so by using this class it'll fit the image properly in that boundary-->
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 galleryColumn">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
           Officia culpa maxime officiis repellat magnam, molestias id dolor non cumque obcaecati ipsum eius voluptas libero laborum in saepe earum, dignissimos quo rem alias cupiditate odit facere illo? Rerum, veritatis.
           </p>
         </div>
       </div>
+      <hr>
       <!-- Another row below isme sum 6*6 derha hu which sums 12 in a row which is the same as above, the only difference here will be that we will just replace the first div with another just for a good look isme hamara image right side me aa jaiga that's it while upar wale me image left side me tha-->
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 galleryColumn">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
           Officia culpa maxime officiis repellat magnam, molestias id dolor non cumque obcaecati ipsum eius voluptas libero laborum in saepe earum, dignissimos quo rem alias cupiditate odit facere illo? Rerum, veritatis.
           </p>
         </div>
-        <div class="col-sm-6">
-            <img src="images/gallery1.jpg" alt=".." class="img-fluid img-responsive">
+        <div class="col-sm-6 galleryColumn">
+          <img src="images/carousel1.jpg" alt=".." class="img-fluid img-responsive" width="70%" style="border-radius: 80%;">
         </div>
       </div>
+      <hr>
       <!--Another row below isme sum 6*6 derha hu so it'll make 2 columns which sums 12 in a row same as the first-->
       <div class="row">
-        <div class="col-sm-6">
-          <img src="images/gallery1.jpg" alt=".." class="img-fluid img-responsive">    <!--so this class img-fluid img-responsive is mainly used while we are using the grid model, as this won't let your image go out of the column sum mentioned i.e 6 here so by using this class it'll fit the image properly in that boundary-->
+        <div class="col-sm-6 galleryColumn">
+          <img src="images/gallery2.jpg" alt=".." class="img-fluid img-responsive" width="70%" style="border-radius: 90%;">    <!--so this class img-fluid img-responsive is mainly used while we are using the grid model, as this won't let your image go out of the column sum mentioned i.e 6 here so by using this class it'll fit the image properly in that boundary-->
         </div>
         <div class="col-sm-6">
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum veniam, impedit est vel possimus ullam quas aliquam voluptatibus cum libero saepe nesciunt beatae magnam reprehenderit. Libero perspiciatis eum temporibus. Doloribus!
@@ -166,7 +209,7 @@
       <!-- Adding button for booking part -->
       <!-- <button type="button" class="btn btn-primary btn-lg btn-block">Book your travel now</button> -->
       <div class="d-grid gap-2">          <!--class d-grid gap-2 is used for getting a large button-->
-        <button class="btn btn-secondary" type="button">Book your travel now</button>
+        <button class="btn btn-dark" type="button">Book your travel now</button>
       </div>
 
     </section>
@@ -175,25 +218,36 @@
     <footer>      <!-- so footer ko bhi hum tin 3 grid of 4*4*4 (i.e = 12) me divide karnge with same grid method-->
       <section id="footer" class="container">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 text-center">
             <!-- Logo & Copyright ka section hoga ye-->
-            <img src="images/logo1.png" alt=".." class="img-fluid img-responsive">
+            <img src="images/logo2.png" alt=".." class="img-fluid img-responsive" width="50%">
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 text-center">
             <!-- Links ka section hoga ye-->
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-            </ul>
+            <h2 style="font-size:24px;">Links</h2>
+            <center>
+              <hr style="border: 2px solid #FFFFFF; width: 50%;">
+            </center>
+            
+            <a href="#" class="footer_links">About</a><br>
+            <a href="#" class="footer_links">Privacy Policy</a><br>
+            <a href="#" class="footer_links">Terms and Conditions</a><br>
+            
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 text-center">
             <!-- Contact ka section hoga ye -->
+            <h2 style="font-size:24px;">Contact Us</h2>
+            <center>
+              <hr style="border: 2px solid #FFFFFF; width: 50%;">
+            </center>
             <p>Phone : 000000</p>
             <p>Email : help@space.com</p>
           </div>
         </div>
       </section>
+      <br>
+      <p class="text-center">Copyright &copy; BPK's Space Travel 2022. All rights reserved.</p>
+      <p class="text-center">Made with &hearts; in India.</p>
     </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
