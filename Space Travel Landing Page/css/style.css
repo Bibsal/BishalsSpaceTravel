@@ -2,6 +2,53 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* About Me */
+.profile-pic {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    /* align-self: center; */
+  }
+  
+  .picture-container {
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  /*Global */
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+   /*Sidebar*/
+   aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+  }
+  
+  aside#sidebar .quote input,
+  aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+  }
+  
+  /*main-col*/
+  article#main-col {
+    float: left;
+    width: 65%;
+  }
+
 /* Services Section */
 
 #servicesOffered {
@@ -29,6 +76,7 @@
 /* Button Section */
 button {
     margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 /* Footer Style */
@@ -56,3 +104,37 @@ ul {
 hr {
     align-self: center;
 }
+
+/*Media Queries*/
+@media (max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+    header {
+      padding-bottom: 20px;
+    }
+    #showcase h1 {
+      margin-top: 40px;
+    }
+    #newsletter button,
+    .quote button {
+      display: block;
+      width: 100%;
+    }
+    #newsletter form input[type='email'],
+    .quote input,
+    .quote textarea {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  
