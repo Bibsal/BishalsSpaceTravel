@@ -79,6 +79,15 @@ button {
     margin-bottom: 40px;
 }
 
+button:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.techPageLink:hover {
+    color: rgb(204, 196, 255);
+    text-decoration: underline;
+}
 /* Footer Style */
 footer {
     padding: 20px;
