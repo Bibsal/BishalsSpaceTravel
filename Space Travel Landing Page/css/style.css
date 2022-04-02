@@ -2,6 +2,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Navbar
+.positionNav {
+  position:fixed;
+} */
+
 /* About Me */
 .profile-pic {
     border-radius: 50%;
